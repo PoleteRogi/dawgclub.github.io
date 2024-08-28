@@ -3,7 +3,9 @@ ImportStyle('https://fonts.cdnfonts.com/css/square-dance')
 GlobalWindowStyle["font-family"] = 'SquareDance10'
 WindowTitle = 'DawgClub'
 
-HotReload = false
+HotReload = true
+
+const IsMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
 function Navbar() {
     return NavigationBar
@@ -86,7 +88,7 @@ WindowComponent = function App() {
                         ['Play Now!'], style=
                         {
                             'position': 'fixed',
-                            'top': '500px',
+                            'top': IsMobile() ? '52%' : '500px',
                             'background-color': Palette.Background,
                             'z-index': 1
                         }
@@ -101,13 +103,15 @@ WindowComponent = function App() {
                     'background-image': 'url(./assets/dawgclubbanner1.png)',
                     'background-position': 'center',
                     'background-repeat': 'no-repeat',
-                    'background-size': 'cover',
                     display: 'flex',
                     'justify-content': 'center',
                     'align-items': 'center',
                     'background-attachment': 'fixed',
                     'margin': '0px',
-                    'z-index': 1
+                    'z-index': 1,
+                    // Make it blur if IsMobile is true
+                    'background-size': IsMobile() ? '100%' : 'cover',
+                    'background-color': IsMobile() ? '#e0871c' : 'none'
                 }
             ),
 

@@ -210,6 +210,22 @@ let lastText = ''
 
 window.onload = (e) => {
     ImportStyle('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+    AddStyleCode(`
+        /* width */
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: ${Palette.Foreground};
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: ${Palette.Background};
+        }
+        `)
 
     document.body.innerHTML = WindowComponent()
     document.body.style = Style(GlobalWindowStyle)
