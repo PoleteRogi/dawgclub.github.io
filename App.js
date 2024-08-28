@@ -113,9 +113,7 @@ WindowComponent = function App() {
                     'background-size': IsMobile() ? '100%' : 'cover',
                     'background-color': IsMobile() ? '#e0871c' : 'none'
                 }
-            ),
-
-            
+            ),            
         ]),
         Footer()
     ])

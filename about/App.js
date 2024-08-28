@@ -79,7 +79,7 @@ WindowComponent = function App() {
                         'width': '350px',
                         'margin-bottom': '10px',
                         'border': '2px solid ' + Palette.Foreground
-                    }).Tooltip("A Dawg's anatomy"),
+                    }).Tooltip("DawgClub's marketing photos."),
                     Text("DawgClub is a fun online MMO platform, where you can play minigames with friends, win coins, and customize your Dawg to your likings! Decorate your house, celebrate parties in it, make your own shop, and much more!", style={'margin-bottom': '10px'}),
                 ], style={
                     'max-width': '350px'
