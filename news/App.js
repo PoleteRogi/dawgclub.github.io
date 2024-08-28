@@ -7,14 +7,14 @@ HotReload = true
 
 function Navbar() {
     return NavigationBar([
-            Image('/favicon.ico', style = {
+            Image('../favicon.ico', style = {
                 height: '20px',
                 'margin-right': '10px'
             }),
             Link(
                 ['DawgClub']
             ).Event('click', () => {
-                window.location.href = '/'
+                window.location.href = '../'
             }),
             VSpacer(),
             Link(
@@ -23,7 +23,7 @@ function Navbar() {
                     'margin-right': '10px'
                 }
             ).Event('click', () => {
-                window.location.href = '/news/'
+                window.location.href = './'
             }),
             Link(
                 ['about'],
@@ -31,14 +31,14 @@ function Navbar() {
                     'margin-right': '10px'
                 }
             ).Event('click', () => {
-                window.location.href = '/about/'
+                window.location.href = '../about/'
             }),
             Link(
                 ['Play'], style = {
                     'margin-left': 'auto'
                 }
             ).Event('click', () => {
-                window.location.href = '/play/'
+                window.location.href = '../play/'
             })
         ],
         style = {

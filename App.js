@@ -8,12 +8,12 @@ HotReload = false
 function Navbar() {
     return NavigationBar
     ([
-        Image('/favicon.ico', style={height: '20px', 'margin-right': '10px'}),
+        Image('./favicon.ico', style={height: '20px', 'margin-right': '10px'}),
         Link
         (
             ['DawgClub']
         ).Event('click', () => {
-            window.location.href = '/'
+            window.location.href = './'
         }),
         VSpacer(),
         Link
@@ -23,7 +23,7 @@ function Navbar() {
                 'margin-right': '10px'
             }
         ).Event('click', () => {
-            window.location.href = '/news/'
+            window.location.href = './news/'
         }),
         Link
         (
@@ -32,7 +32,7 @@ function Navbar() {
                 'margin-right': '10px'
             }
         ).Event('click', () => {
-            window.location.href = '/about/'
+            window.location.href = './about/'
         }),
         Link
         (
@@ -41,7 +41,7 @@ function Navbar() {
                 'margin-left': 'auto'
             }
         ).Event('click', () => {
-            window.location.href = '/play/'
+            window.location.href = './play/'
         })
     ],
     style=
@@ -91,14 +91,14 @@ WindowComponent = function App() {
                             'z-index': 1
                         }
                     ).Event('click', () => {
-                        window.location.href = '/play/'
+                        window.location.href = './play/'
                     })
                 ],
                 style=
                 {
                     width: '100vw',
                     height: 'calc(100vh - 50px)',
-                    'background-image': 'url(/assets/dawgclubbanner1.png)',
+                    'background-image': 'url(./assets/dawgclubbanner1.png)',
                     'background-position': 'center',
                     'background-repeat': 'no-repeat',
                     'background-size': 'cover',

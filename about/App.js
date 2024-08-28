@@ -7,14 +7,14 @@ HotReload = false
 
 function Navbar() {
     return NavigationBar([
-            Image('/favicon.ico', style = {
+            Image('../favicon.ico', style = {
                 height: '20px',
                 'margin-right': '10px'
             }),
             Link(
                 ['DawgClub']
             ).Event('click', () => {
-                window.location.href = '/'
+                window.location.href = '../'
             }),
             VSpacer(),
             Link(
@@ -23,7 +23,7 @@ function Navbar() {
                     'margin-right': '10px'
                 }
             ).Event('click', () => {
-                window.location.href = '/news/'
+                window.location.href = '../news/'
             }),
             Link(
                 ['about'],
@@ -31,14 +31,14 @@ function Navbar() {
                     'margin-right': '10px'
                 }
             ).Event('click', () => {
-                window.location.href = '/about/'
+                window.location.href = './'
             }),
             Link(
                 ['Play'], style = {
                     'margin-left': 'auto'
                 }
             ).Event('click', () => {
-                window.location.href = '/play/'
+                window.location.href = '../play'
             })
         ],
         style = {
@@ -75,7 +75,7 @@ WindowComponent = function App() {
                         }
                     ),
                     HSpacer(),
-                    Image('/assets/dawgclubabout.png', style = {
+                    Image('../assets/dawgclubabout.png', style = {
                         'width': '500px',
                         'margin-bottom': '10px',
                         'border': '2px solid ' + Palette.Foreground
