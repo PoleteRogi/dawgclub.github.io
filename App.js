@@ -3,7 +3,7 @@ ImportStyle('https://fonts.cdnfonts.com/css/square-dance')
 GlobalWindowStyle["font-family"] = 'SquareDance10'
 WindowTitle = 'DawgClub'
 
-HotReload = true
+HotReload = false
 
 const IsMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
