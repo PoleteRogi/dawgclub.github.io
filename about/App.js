@@ -76,13 +76,13 @@ WindowComponent = function App() {
                     ),
                     HSpacer(),
                     Image('../assets/dawgclubabout.png', style = {
-                        'width': '500px',
+                        'width': '350px',
                         'margin-bottom': '10px',
                         'border': '2px solid ' + Palette.Foreground
                     }).Tooltip("A Dawg's anatomy"),
                     Text("DawgClub is a fun online MMO platform, where you can play minigames with friends, win coins, and customize your Dawg to your likings! Decorate your house, celebrate parties in it, make your own shop, and much more!", style={'margin-bottom': '10px'}),
                 ], style={
-                    'max-width': '500px'
+                    'max-width': '350px'
                 })
             ],
             style = {
